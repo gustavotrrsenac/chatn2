@@ -18,7 +18,7 @@ def paginaInicial():
 #Define a rota para exibir a página de login
 @app.get('/login')
 def exibirPaginaLogin():
-    return render_template('login.html', msgErro='')
+    return render_template('login.html', msgErro='testetetetetetet')
 
 #Define a rota para processar o login
 @app.post('/login')
@@ -70,4 +70,4 @@ def page_not_found(e):
 
 #Inicia o servidor Flask, chamando o método run do objeto app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=80)
