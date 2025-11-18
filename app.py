@@ -18,7 +18,7 @@ def paginaInicial():
 #Define a rota para exibir a página de login
 @app.get('/login')
 def exibirPaginaLogin():
-    return render_template('login.html', msgErro='testetetetetetet')
+    return render_template('login.html', msgErro='')
 
 #Define a rota para processar o login
 @app.post('/login')
